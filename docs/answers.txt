@@ -16,6 +16,9 @@ Visualizing Git:
 SetUp:
 I made a github account last year around January
 
+Repository:
+https://github.com/Jacob-Mannix/assignment2JacobM
+
 
 Question 1:
     Imprint@Imprint MINGW64 ~/Documents/GitHub/assignment2JacobMannix (master)
