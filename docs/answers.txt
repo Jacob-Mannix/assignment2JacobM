@@ -1,0 +1,117 @@
+Jacob Mannix
+
+Git Lab Tutorials:
+1: Introduction Sequence
+    2/21/24
+2: Push & Pull -- Git Remotes!
+    2/21/24
+3: Ramping Up
+    2/22/24
+4: Moving Work Around
+    2/22/24
+
+Visualizing Git:
+    2/22/24
+
+SetUp:
+I made a github account last year around January
+
+
+Question 1:
+    Imprint@Imprint MINGW64 ~/Documents/GitHub/assignment2JacobMannix (master)
+    $ git commit -m "Added docs folder and status.txt with git status output"
+    [master d2e947a] Added docs folder and status.txt with git status output
+    1 file changed, 6 insertions(+)
+    create mode 100644 docs/status.txt
+
+    Imprint@Imprint MINGW64 ~/Documents/GitHub/assignment2JacobMannix (master)
+    $ git push origin master
+
+    Enumerating objects: 5, done.
+    Counting objects: 100% (5/5), done.
+    Delta compression using up to 12 threads
+    Compressing objects: 100% (3/3), done.
+    Writing objects: 100% (4/4), 485 bytes | 485.00 KiB/s, done.
+    Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+    remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+    To https://github.com/Jacob-Mannix/assignment2JacobMannix.git
+    315b012..d2e947a  master -> master
+
+Question 2:
+    There have been 9 commits to the repository
+
+    Command:
+    git log --oneline | wc -l
+
+
+Question 3:
+    Command:
+    git log -1 -- README.md
+
+    Result:
+    $ git log -1 -- README.md
+    commit 315b012a8d7830e5411828b3ea39f20ab3a6d45d
+    Author: Jacob <jcm18e@fsu.edu>
+    Date:   Thu Feb 22 18:46:43 2024 -0500
+
+        Update README.md
+
+        Added repository owner information to the README.md
+
+
+Question 4:
+    Feature Development: Branches allow multiple developers to work on different 
+    features simultaneously without interfering with each other's work. 
+    This isolation ensures that the main codebase remains stable.
+
+    Bug Fixes: Branches are used to address and fix bugs in a controlled environment. 
+    Developers can work on fixes in separate branches and test their changes without affecting the main codebase.
+
+
+Question 5:
+    git log: Shows the commit history of the repository, allowing you to see what changes have been made, by whom, and when.
+
+    git status: Provides information about the current state of the working directory and staging area. 
+    It shows which changes have been staged, which haven't, and which files aren't being tracked by Git.
+
+
+Question 6:
+    Command:
+    git log -- Vehicle.h
+
+
+Question 7:
+    Command:
+    git log --grep="file"
+
+
+
+Question 8:
+    What Is Inheritance?
+        Inheritance is a mechanism where a new class is derived from an existing class. 
+        The derived class inherits attributes and behaviors (methods) from the base class, 
+        allowing for code reuse and the creation of hierarchical class structures.
+
+    What Is Polymorphism?
+        Polymorphism is the ability of different classes to respond to the same method call in different ways. 
+        This means the same method or operation may behave differently depending on the object it is acting upon.
+
+    What Is Encapsulation?
+        Encapsulation is the bundling of data (attributes) and methods that operate on the data into a single unit, 
+        or class, with the intention of restricting direct access to some of the object's components. 
+        This is typically achieved through the use of access modifiers (private, protected, public).
+
+
+
+Question 9:
+    The "Dictator and Lieutenants" workflow features a central repository where only the dictator can push changes, 
+    after merging changes from lieutenant repositories. Lieutenants manage contributions from developers. 
+    In contrast, the "Integration Manager" workflow involves each developer having public/private repositories, 
+    with an integration manager managing the central repository, merging changes from developers' public repositories.
+
+
+
+Question 10:
+    This workflow can scale efficiently for large teams by delegating responsibilities. 
+    Lieutenants manage subsets of the team, reducing the bottleneck at the integration point and ensuring a smoother workflow. 
+    It allows for specialized oversight on different project parts, enhancing code quality and integration efficiency.
